@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-Jun-2024, 2:16:41 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+	<class name="IssueDTO" table="st_issue">
+		<id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="assignTo" type="java.lang.String">
+			<column name="ASSIGNTO" />
+		</property>
+		<property name="description" type="java.lang.String">
+			<column name="DESCRIPTION" />
+		</property>
+		<property name="title" type="java.lang.String">
+			<column name="TITLE" />
+		</property>
+		<property name="openDate" type="java.util.Date">
+			<column name="OPENDATE" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="STATUS" />
+		</property>
+	</class>
+</hibernate-mapping>
